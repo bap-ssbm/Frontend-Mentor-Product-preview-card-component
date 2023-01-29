@@ -1,0 +1,159 @@
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.content-container{
+    background-color: white;
+    height: 450px;
+    aspect-ratio: 12/9;
+    border-radius: 2%;
+    position: relative;
+}
+
+
+.description-side{
+    padding: 30px;
+}
+h3{
+    color: hsl(228, 12%, 48%);
+    font-size: 11px;
+    letter-spacing: .4rem;
+}
+
+h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1;
+    margin: 15px auto;
+}
+
+/*price */
+h2{
+    display: inline-block;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color:hsl(158, 36%, 37%);
+    font-size: 30px;
+}
+.crossed-price{
+    display: inline-block;
+    text-decoration-line: line-through;
+    position: relative;
+    bottom: 5px;
+    left: 10px;
+    
+}
+
+.btn-success{
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    width: 240px;
+    height: 50px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 30px;
+    
+    letter-spacing: .1rem;
+    
+}
+.btn-success:hover{
+    background-color: hsl(159, 33%, 16%);
+}
+
+.image1{
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: 66.64%; 
+    border-radius: 2% 0% 0% 2%;
+     
+    background-image: url("images/image-product-desktop.jpg");
+} 
+
+
+p{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: .1rem;
+    margin: 15px 0px; 
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+ }
+
+
+/* //mobile */
+@media (max-width:576px) {
+    
+    .content-container{
+        height: 650px;
+        width: 340px;
+        border-radius: 2%;
+    }
+
+
+    .image1{
+        border-radius: 2% 2% 0% 0%;
+        background-image: url("images/image-product-mobile.jpg");
+    } 
+
+    .description-side{
+        padding: 25px;
+        position: relative;
+        bottom: 40px;
+    }
+    h3{
+        position: relative;
+        
+        bottom: 5px;
+        font-size: 11px;
+        letter-spacing: .4rem;
+    }
+    
+    h1{
+
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 1;
+        margin: 10px auto;
+    }
+    
+    /*price */
+    h2{
+        
+        position: relative;
+        font-size: 30px;
+    }
+    .crossed-price{
+        bottom: 5px;
+        left: 10px;
+        
+    }
+    
+    .btn-success{
+
+        width: 290px;
+        height: 50px;
+        font-weight: 700;
+        bottom: 0px;
+        
+        
+    }
+    
+
+
+
+}
