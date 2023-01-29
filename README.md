@@ -12,4 +12,6 @@ background-size: contain;
     padding-top: 66.64%; 
     border-radius: 2% 0% 0% 2%;
     
-    and utilizing relative positioning for parent element, before using absolute for positioning for children elements.
+and utilizing relative positioning for parent element, before using absolute for positioning for children elements.
+\
+https://bap-ssbm.github.io/Frontend-Mentor-Product-preview-card-component/
