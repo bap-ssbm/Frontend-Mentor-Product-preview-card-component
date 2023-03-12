@@ -5,7 +5,6 @@ body{
     height: 100vh;
     background-color: hsl(30, 38%, 92%);
     font-family: 'Montserrat', sans-serif;
-    
 }
 
 .content-container{
@@ -16,10 +15,11 @@ body{
     position: relative;
 }
 
-
-.description-side{
-    padding: 30px;
+.col-sm-6{
+    margin: 0;
+    padding: 0;
 }
+
 h3{
     color: hsl(228, 12%, 48%);
     font-size: 11px;
@@ -31,7 +31,15 @@ h1{
     font-weight: 700;
     font-size: 40px;
     line-height: 1;
-    margin: 15px auto;
+}
+
+.desciption-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 /*price */
@@ -45,10 +53,6 @@ h2{
 .crossed-price{
     display: inline-block;
     text-decoration-line: line-through;
-    position: relative;
-    bottom: 5px;
-    left: 10px;
-    
 }
 
 .btn-success{
@@ -57,9 +61,6 @@ h2{
     width: 240px;
     height: 50px;
     font-weight: 700;
-    position: absolute;
-    bottom: 30px;
-    
     letter-spacing: .1rem;
     
 }
@@ -74,7 +75,6 @@ h2{
     max-height: 100%;
     padding-top: 66.64%; 
     border-radius: 2% 0% 0% 2%;
-     
     background-image: url("images/image-product-desktop.jpg");
 } 
 
@@ -109,12 +109,6 @@ p{
         border-radius: 2% 2% 0% 0%;
         background-image: url("images/image-product-mobile.jpg");
     } 
-
-    .description-side{
-        padding: 25px;
-        position: relative;
-        bottom: 40px;
-    }
     h3{
         position: relative;
         
